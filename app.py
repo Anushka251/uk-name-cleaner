@@ -11,8 +11,8 @@ import os
 try:
     nlp = spacy.load("en_core_web_sm")
 except:
-    from spacy.cli import download
-    download("en_core_web_sm")
+    import subprocess
+    subprocess.run(["puthon", "-m", "spacy", "download", "en_core_web_sm"])
     nlp = spacy.load("en_core_web_sm")
 # -------------------- Mappings --------------------
 title_mapping = {

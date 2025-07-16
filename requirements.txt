@@ -1,0 +1,7 @@
+streamlit
+pandas
+fuzzywuzzy
+python-Levenshtein
+metaphone
+spacy
+unidecode
